@@ -41,3 +41,13 @@ helpers do
     current_user(token)
   end
 end
+
+before do
+  headers "Content-Type" => "application/json"
+end
+
+
+post '/login' do
+  req = JSON.parse(request.body.read)
+  login(req['name'], req['password'])
+end
