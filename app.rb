@@ -14,6 +14,10 @@ post '/login' do
   login(req['name'], req['password'])
 end
 
+post '/register' do
+  
+end
+
 get '/users' do
   login_required(request.env['HTTP_AUTH'])
   User.all.to_json
