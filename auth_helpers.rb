@@ -1,13 +1,4 @@
-
 helpers do
-  def helper(name)
-    if name.size > 5
-      "Name: #{name}"
-    else
-      raise StandardError.new "This is an exception"
-    end
-  end
-
   def login(name, password)
     hmac_secret = ''
     data = {
@@ -15,7 +6,6 @@ helpers do
       password: password
     }
     user = User.find_by(name: name, password: password).first
-    binding.pry
     return JWT.encode data, hmac_secret, 'HS256' if user
     return StandardError.new "User not found" if !user
   rescue
