@@ -4,6 +4,7 @@ require 'json'
 require 'jwt'
 require 'pry'
 require './auth_helpers'
+require './user'
 
 before do
   headers "Content-Type" => "application/json"
@@ -15,7 +16,12 @@ post '/login' do
 end
 
 post '/register' do
-  
+  req = JSON.parse(request.body.read)
+  user = User.create(
+    name: req['name'],
+    password: req['password']
+  )
+  user.to_json
 end
 
 get '/users' do
