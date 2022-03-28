@@ -4,7 +4,7 @@ require 'json'
 require 'jwt'
 require 'pry'
 require './auth_helpers'
-require './user'
+require './db'
 
 before do
   headers "Content-Type" => "application/json"
