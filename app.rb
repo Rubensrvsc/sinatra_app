@@ -5,6 +5,7 @@ require 'jwt'
 require 'pry'
 require './auth_helpers'
 require './db'
+require_relative 'lib/create_user/flow'
 
 before do
   headers "Content-Type" => "application/json"
