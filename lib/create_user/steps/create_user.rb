@@ -1,4 +1,5 @@
 require 'dry/monads'
+require './models'
 
 module Lib
   module CreateUser
