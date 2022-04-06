@@ -7,7 +7,13 @@ module Lib
       class CreateUser
         include Dry::Monads[:result]
 
-        def call
+        def call(attrs)
+          user = User.create(
+            name: attrs['name'],
+            password: attrs['password']
+          )
+
+          Success(user)
         end
       end
     end

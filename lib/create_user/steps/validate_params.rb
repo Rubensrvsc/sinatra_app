@@ -7,7 +7,12 @@ module Lib
       class ValidateParams
         include Dry::Monads[:result]
         
-        def call
+        def call(attrs)
+          if attrs['name'] != ''
+            return Success(attrs)
+          end
+
+          Failure('Name empty')
         end
       end
     end
