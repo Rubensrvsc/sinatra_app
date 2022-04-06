@@ -18,11 +18,8 @@ end
 
 post '/register' do
   req = JSON.parse(request.body.read)
-  user = User.create(
-    name: req['name'],
-    password: req['password']
-  )
-  user.to_json
+  response = Lib::CreateUser::Flow.new.call(req)
+  response.to_json
 end
 
 get '/users' do
