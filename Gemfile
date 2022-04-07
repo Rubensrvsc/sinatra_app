@@ -15,6 +15,7 @@ gem "searchkick"
 gem "elasticsearch"
 gem "dry-monads"
 gem "rack"
+gem 'database_cleaner'
 group :test do
   gem "rspec"
   gem "rack-test"
