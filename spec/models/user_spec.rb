@@ -1,7 +1,6 @@
 ENV['APP_ENV'] = 'test'
 
-require 'rspec'
-require 'rack/test'
+require 'spec_helper'
 
 RSpec.describe User, type: :model do
   describe 'total class number' do
