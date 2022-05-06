@@ -7,3 +7,4 @@ In this application get a oportunity of study the DLS sinatra where could testin
 - Database
 - Testing (with rspec)
 - Api rest offered for DSL
+- Business Logic with Dry-Monads
