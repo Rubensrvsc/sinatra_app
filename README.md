@@ -15,3 +15,13 @@ In this application get a oportunity of study the DLS sinatra where could testin
 - [Rspec](https://rspec.info/)
 - [Dry-Monads](https://dry-rb.org/gems/dry-monads/1.3/)
 - [Sinatra-ActiveRecord](https://github.com/sinatra-activerecord/sinatra-activerecord)
+
+## Running this project
+
+```
+bundle install
+```
+
+```
+bundle exec app.rb
+```
