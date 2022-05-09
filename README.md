@@ -25,3 +25,10 @@ bundle install
 ```
 bundle exec app.rb
 ```
+
+### Here are the application endpoints
+
+| Method |EndPoint | Description |
+|---|---|---|
+| POST | `http://localhost:4567/register/` | Registra o usuário na aplicação |
+| POST | `http://localhost:4567/login/` | Loga o usuário na aplicação |
