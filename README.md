@@ -33,3 +33,27 @@ bundle exec app.rb
 |---|---|---|
 | POST | `http://localhost:4567/register/` | Registra o usuário na aplicação |
 | POST | `http://localhost:4567/login/` | Loga o usuário na aplicação |
+| GET | `http://localhost:4567/users/` | Obtém os usuários da aplicação |
+
+## Documentation of EndPoints
+
+### Endpoint:
+
+- POST: `/register/`
+
++ Request
+
+
+    `{
+        "username": "Maria",
+        "email":"Maria@gmail.com",
+        "password": "Maria12345",
+    }`
+
++ Response
+
+    `{
+        "username": "Maria",
+        "email":"Maria@gmail.com",
+        "password": "Maria12345",
+    }`
