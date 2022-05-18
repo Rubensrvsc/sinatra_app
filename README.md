@@ -57,3 +57,18 @@ bundle exec app.rb
         "email":"Maria@gmail.com",
         "password": "Maria12345",
     }`
+    
+### Endpoint:
+
+- POST: `/login/`
+
++ Request
+
+    `{
+        "username": "Maria",
+        "password": "Maria12345",
+    }`
+    
+ - Response
+
+    `hsahsahjsahjsahsahhsahsahsahjhjsahsasnnmasnmasnmsa`
