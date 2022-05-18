@@ -72,3 +72,26 @@ bundle exec app.rb
  - Response
 
     `hsahsahjsahjsahsahhsahsahsahjhjsahsasnnmasnmasnmsa`
+    
+ ### Endpoint:
+ 
+ - GET: `/users/`
+
++ Header
+
+    `HTTP_AUTH: a394f0b3d620a3c8081d7beac398ea73ec14f1e4`
+
+    ```
+    [
+        {
+            "username": "Maria",
+            "email": "Maria@gmail.com",
+        },
+        
+        {
+            "username": "Joao",
+            "email": "Joao@mail.com",
+        }
+    ]
+    ```
+
