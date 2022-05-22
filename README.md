@@ -39,7 +39,7 @@ bundle exec app.rb
 
 ### Endpoint:
 
-- POST: `/register/`
+- POST: `/register`
 
 + Request
 
@@ -60,7 +60,7 @@ bundle exec app.rb
     
 ### Endpoint:
 
-- POST: `/login/`
+- POST: `/login`
 
 + Request
 
@@ -75,7 +75,7 @@ bundle exec app.rb
     
  ### Endpoint:
  
- - GET: `/users/`
+ - GET: `/users`
 
 + Header
 
